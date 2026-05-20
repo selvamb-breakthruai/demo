@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Docker Demo</h1>
+
+    <form id="item-form">
+      <input type="hidden" id="item-id" />
+      <div class="field">
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Enter title" required />
+      </div>
+      <div class="field">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Enter description"></textarea>
+      </div>
+      <div class="actions">
+        <button type="submit">Save Item</button>
+        <button type="button" id="cancel-button" class="secondary">Cancel</button>
+      </div>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="items-list"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
