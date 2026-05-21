@@ -19,9 +19,8 @@ spec:
     spec:
       containers:
       - name: crud-app
-        image: demo-app
-
-        imagePullPolicy: Never
+        image: selvam242004/demo-app:latest
+        imagePullPolicy: Always
 
         ports:
         - containerPort: 3000
